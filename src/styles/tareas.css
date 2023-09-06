@@ -27,16 +27,19 @@
 
 .title__works {
 
-    width: 93%;
+    width: 96%;
 
     display: flex;
     justify-content: center;
 
     margin-bottom: 18px;
-
-    color: rgba(255, 255, 255, 0.627);
-    background-color: rgb(199, 127, 34);
-    border: 1px solid white;
+    padding: 12px;
+    font-weight: 800;
+    color: rgba(231, 226, 226, 0.919);
+    color:rgba(109, 124, 43, 0.876);;
+    box-shadow: -1px -1px 12px -1px rgba(238, 229, 197, 0.85);
+    border:.3px solid rgba(250, 249, 249, 0.52);
+    
 }
 
 .scroll__container {
@@ -70,9 +73,10 @@
 
     cursor: pointer;
 
-    box-shadow: 0px 0px 1px 1px white;
+    box-shadow: 1px -1px 12px 0px rgba(238, 229, 197, 0.85);
     background-color: rgb(12, 13, 14);
-    color: white;
+    color: rgba(255, 255, 255, 0.886);
+    border: .2px solid rgba(255, 255, 255, 0.655);
 }
 
 .newWork {
@@ -94,7 +98,7 @@
     width: 20px;
 
     z-index: 2;
-    top: 65px;
+    top: 91px;
     left: 27px;
 
     position: absolute;
@@ -119,7 +123,7 @@
     align-items: center;
 
     background-color: rgb(0, 0, 0);
-    border: 1px solid rgba(255, 255, 255, 0.296);
+    border: 0px solid rgba(255, 255, 255, 0.296);
 }
 
 .loading {
@@ -133,13 +137,13 @@
 
 .form__work {
 
-    width: 80%;
+    width: 95%;
     height: 80%;
     display: flex;
 
     flex-direction: column;
 
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(16, 15, 15, 0.498);
 }
 
 .close__btn {
@@ -158,49 +162,67 @@
 }
 
 .form__group {
-
+    
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    
 }
 
 .form__label {
     
-    width: 100%;
+    width: 50%;
     padding: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.713);
 }
 
 .form__input {
 
-    width: 100%;
-    height: 25px;
+    width: 80%;
+    height: 40px;
 
     outline: none;
-
+    margin: auto;
     border: none;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.404);
-    background-color: rgba(226, 213, 69, 0.435);
+
+    font-weight: 500;
+    border-radius: 3px;
+    border:1px solid rgba(138, 178, 184, 0.77);
+    color: rgb(10, 9, 9);
+   
+    background-color: rgba(247, 246, 233, 0.827);
+}
+.description{
+    margin: 3px;
+    height: 80px;
+}
+.check{
+    width: max-content;
+    height: fit-content;
+    margin-right: 85%;
+    
 }
 
 .form__btn {
 
-    height: 20px;
-    width: 40%;
+    
+    width: 60%;
 
     font-weight: 600;
 
     margin: auto;
     margin-top: 15px;
-
-    padding: 2px;
-   
+    
+    padding: 8px;
+    
     cursor: pointer;
     border: none;
-    border-radius: 5%;
+    border-radius: 15px;
   
-    color: rgba(255, 255, 255, 0.735);
-    box-shadow: 1px .5px 1.5px .5px rgba(255, 255, 255, 0.596);
-    background-color: rgb(218, 13, 13);
+    color: rgba(249, 244, 244, 0.738);
+    
+    background-color: rgba(191, 145, 29, 0.872);
+    border: 1px solid rgba(255, 255, 255, 0.455);
 }
 
 .form__btn:active {

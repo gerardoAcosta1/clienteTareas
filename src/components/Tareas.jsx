@@ -22,6 +22,7 @@ const Tareas = () => {
         setLoading(false)
         allWork()
         setLoading(true)
+        console.log(allWork())
 
     }, [])
 
@@ -124,13 +125,13 @@ const Tareas = () => {
                             <label className='form__label' htmlFor="title">Title</label>
                             <input className="form__input"{...register('title')} type="textarea" id="title" />
                         </div>
-                        <div className="form__group">
+                        <div className="form__group description">
                             <label className='form__label' htmlFor="description">Description</label>
-                            <input className="form__input"{...register('description')} type="textarea" id="description" />
+                            <input className="form__input "{...register('description')} type="textarea" id="description" />
                         </div>
                         <div className="form__group">
                             <label className='form__label' htmlFor="completed">Completed</label>
-                            <input className="form__input" {...register('completed')} type="checkbox" id="completed" />
+                            <input className="form__input check" {...register('completed')} type="checkbox" id="completed" />
                         </div>
                         <button className="form__btn">{updateInfo ? 'Update' : 'ADD'}</button>
                     </form>
