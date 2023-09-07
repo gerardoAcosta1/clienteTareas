@@ -45,7 +45,7 @@
 .scroll__container {
 
     width: 500px;
-    max-width: 85%;
+    max-width: 90%;
     max-height: 350px;
 
     overflow-y: hidden;
@@ -77,20 +77,15 @@
     background-color: rgb(12, 13, 14);
     color: rgba(255, 255, 255, 0.886);
     border: .2px solid rgba(255, 255, 255, 0.655);
+    transition: all .2s;
 }
 
-.newWork {
+.bx-comment-add:active{
+    box-shadow: 0 0 0 0 black;
+     
+    transform: scale(.9);
 
-    margin-left: 50%;
-    margin-bottom: 1px;
-    padding: 5px;
-
-    border: none;
-    border-radius: 5%;
-
-
-    background-color: rgb(32, 118, 125);
-    color: white;
+    
 }
 
 .pacman__img {
@@ -99,7 +94,7 @@
 
     z-index: 2;
     top: 91px;
-    left: 27px;
+    left: 20px;
 
     position: absolute;
 }
@@ -107,7 +102,7 @@
 .form__container {
 
     width: max-content;
-    max-width: 500px;
+    max-width: 330px;
     min-width: 250px;
     height: max-content;
 
@@ -121,9 +116,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
 
     background-color: rgb(0, 0, 0);
-    border: 0px solid rgba(255, 255, 255, 0.296);
+    
 }
 
 .loading {
@@ -137,11 +133,12 @@
 
 .form__work {
 
-    width: 95%;
+    width: 100%;
     height: 80%;
     display: flex;
 
     flex-direction: column;
+    
 
     background-color: rgba(16, 15, 15, 0.498);
 }
@@ -164,21 +161,24 @@
 .form__group {
     
     display: flex;
-    justify-content: flex-start;
+    justify-content: end;
+    gap: 10%;
+    
+    
     
 }
 
 .form__label {
     
-    width: 50%;
-    padding: 12px;
+    width: 10%;
+    padding: 5px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.713);
 }
 
 .form__input {
 
-    width: 80%;
+    width: 60%;
     height: 40px;
 
     outline: none;
@@ -193,13 +193,21 @@
     background-color: rgba(247, 246, 233, 0.827);
 }
 .description{
-    margin: 3px;
+    margin-top: 5px;
     height: 80px;
+   overflow-y: hidden;
+ 
+  
+  
+   
 }
+.description::-webkit-scrollbar {
+    display: none;
+  }
 .check{
     width: max-content;
     height: fit-content;
-    margin-right: 85%;
+    margin-right: 65%;
     
 }
 

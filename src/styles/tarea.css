@@ -3,9 +3,10 @@
     padding: 12px;
 
     background-color: rgb(6, 4, 4);
-   
-    
+
+
 }
+
 .list__works {
 
     width: 100%;
@@ -13,7 +14,7 @@
 
     list-style: none;
     display: flex;
-    
+
 }
 
 .item__works {
@@ -37,7 +38,7 @@
 
     margin-bottom: 5px;
 
-    word-break: break-all; 
+    word-break: break-all;
     hyphens: auto;
     text-align: justify;
 
@@ -51,11 +52,10 @@
     font-size: 13px;
     font-weight: 600;
 
-    word-break: break-all; 
+    word-break: break-all;
 
-    padding-left: 2px;
-    padding-right: 1px;
-    padding-bottom: 3px;
+    padding: 7px;
+
 
     color: rgba(226, 163, 16, 0.722);
 }
@@ -64,22 +64,40 @@
 
     font-size: 20px;
 
-    padding-left: 4px;
+    padding-left: 8px;
     padding-top: 3px;
 
     cursor: pointer;
     color: rgba(255, 166, 0, 0.733);
+
+    transition: all .3s;
+}
+
+.bx-edit:active {
+
+    transform: scale(.7);
+
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+
 }
 
 .bx-trash {
 
     font-size: 20px;
 
-    padding-left: 10px;
+    padding-left: 40px;
 
     cursor: pointer;
     color: rgba(217, 94, 49, 0.655);
 
+}
+
+.bx-trash:active {
+
+     
+    transform: scale(.9);
+
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 .good {
@@ -114,7 +132,8 @@
 
         font-size: 10px;
     }
-    .value__item{
+
+    .value__item {
         font-size: 10px;
     }
 }

@@ -127,7 +127,8 @@ const Tareas = () => {
                         </div>
                         <div className="form__group description">
                             <label className='form__label' htmlFor="description">Description</label>
-                            <input className="form__input "{...register('description')} type="textarea" id="description" />
+
+                            <textarea name="textarea" rows="10" cols="50" className="form__input  description"{...register('description')} type="textarea" id="description">Write something here</textarea>
                         </div>
                         <div className="form__group">
                             <label className='form__label' htmlFor="completed">Completed</label>
