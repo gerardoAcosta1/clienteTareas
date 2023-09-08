@@ -22,8 +22,6 @@ const Tareas = () => {
         setLoading(false)
         allWork()
         setLoading(true)
-        console.log(allWork())
-
     }, [])
 
     useEffect(() => {
@@ -106,10 +104,12 @@ const Tareas = () => {
         });
     }
     //-----------return------------------------------
+    console.log(works)
     return (
         <div className="main__works">
             <div className="container__works">
-
+                
+                
                 <h2 className="title__works">works</h2>
 
                 <i onClick={addNewWork} class='bx bx-comment-add'>New</i>
@@ -154,6 +154,9 @@ const Tareas = () => {
                         ))
                     }
 
+                </div>
+                <div className="data__container">
+                <h4 className="database">dataBase: <span className={`${!works.length == 0 ? 'conected' : 'disconected'}`}>{!works.length == 0 ? 'conected' : 'Disconnected'}</span></h4>
                 </div>
             </div>
 
