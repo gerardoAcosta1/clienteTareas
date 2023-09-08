@@ -14,7 +14,6 @@
 
     list-style: none;
     display: flex;
-
 }
 
 .item__works {
@@ -28,6 +27,7 @@
 
     color: rgb(209, 202, 202);
     background-color: rgb(0, 0, 0);
+
     box-shadow: 1px -1px 12px 0px rgba(229, 162, 29, 0.581);
 }
 
@@ -68,6 +68,7 @@
     padding-top: 3px;
 
     cursor: pointer;
+
     color: rgba(255, 166, 0, 0.733);
 
     transition: all .3s;
@@ -78,7 +79,6 @@
     transform: scale(.7);
 
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-
 }
 
 .bx-trash {
@@ -89,12 +89,10 @@
 
     cursor: pointer;
     color: rgba(217, 94, 49, 0.655);
-
 }
 
 .bx-trash:active {
 
-     
     transform: scale(.9);
 
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
@@ -103,15 +101,15 @@
 .good {
 
     margin-left: 30%;
-    color: rgba(190, 213, 23, 0.824);
 
+    color: rgba(190, 213, 23, 0.824);
 }
 
 .bad {
 
     margin-left: 30%;
-    color: rgba(169, 5, 5, 0.824);
 
+    color: rgba(169, 5, 5, 0.824);
 }
 
 .form__works {
@@ -128,12 +126,21 @@
 }
 
 @media screen and (max-width: 331px) {
+
     .title__item {
 
         font-size: 10px;
     }
 
     .value__item {
+        
         font-size: 10px;
     }
+}
+@media screen and (min-width:1900px) {
+
+    .value__item{
+        font-size: 24px;
+    }
+    
 }

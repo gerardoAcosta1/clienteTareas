@@ -6,9 +6,10 @@ function App() {
 
   return (
     <div className='app__main'>
-      
+
       <Tareas/>
-    </div>
+     
+    </div> 
   )
 }
 
