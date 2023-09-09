@@ -53,6 +53,8 @@
     font-family:'Courier New', Courier, monospace;
     font-weight: 100;
     display: flex;
+    flex-direction: column;
+   
     
     margin-top: 10px;
 }
@@ -69,7 +71,8 @@
 
     
 
-    color: rgba(23, 213, 210, 0.824);
+    color: rgba(109, 124, 43, 0.876);
+   
 }
 
 .disconected {
@@ -91,7 +94,7 @@
     flex-direction: column-reverse;
 
     border: 1px dashed white;
-    position: relative;
+  
 }
 
 .scroll__container::-webkit-scrollbar {
@@ -178,7 +181,7 @@
 
     
     
-    background-color: rgb(16, 15, 15);
+    background-color: rgba(0, 0, 0, 0.824);
    
 }
 

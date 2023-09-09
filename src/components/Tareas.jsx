@@ -157,6 +157,7 @@ const Tareas = () => {
                 </div>
                 <div className="data__container">
                 <h4 className="database">dataBase: <span className={`${!works.length == 0 ? 'conected' : 'disconected'}`}>{!works.length == 0 ? 'conected' : 'Disconnected'}</span></h4>
+                <h4 className="database">Storage: <span className={`${works.length == 0 ? 'conected' : 'disconected'}`}>{works.length == 0 ? 'conected' : 'Disconnected'}</span></h4>
                 </div>
             </div>
 
